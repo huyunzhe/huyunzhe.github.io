@@ -13,6 +13,24 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <style>
+      .paper-teaser {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        cursor: zoom-in;
+        position: relative;
+        z-index: 1;
+      }
+      .paper-teaser:hover {
+        transform: scale(5);
+        z-index: 100;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        border-radius: 4px;
+      }
+    </style>
   </head>
 
   <body>
@@ -46,9 +64,9 @@
                     <p class="name" style="text-align: center">Yunzhe Hu</p>
                     <p>
                       I'm a PhD student at the School of Computing and Data
-                      Science, University of Hong Kong, advised by Prof. Dong Xu
-                      and worked with Prof. Difan Zou. Previously, I was an
-                      undergraduate at Shanghai Jiao Tong University, studying control science and engineering.
+                      Science, University of Hong Kong, advised <a href="https://scholar.google.com/citations?user=7Hdu5k4AAAAJ&hl=en">by Prof. Dong Xu</a>,
+                      and have worked with <a href="https://difanzou.github.io/">Prof. Difan Zou</a>. Previously, I received my bachelor's degree from
+                      Shanghai Jiao Tong University in 2022, where I studied control science and engineering.
                     </p>
                     <p>
                       I’m currently working on empowering an agent to learn from
@@ -60,7 +78,7 @@
                     </p>
                     <p style="text-align: center">
                       <a href="yzhu@cs.hku.hk">Email</a> &nbsp;/&nbsp;
-                      <a href="data/YunzheHu-CV.pdf">CV</a> &nbsp;/&nbsp;
+                      <!-- <a href="data/YunzheHu-CV.pdf">CV</a> &nbsp;/&nbsp; -->
                       <a
                         href="https://scholar.google.com/citations?user=FTw85U8AAAAJ&hl=en"
                         >Google Scholar</a
@@ -107,6 +125,9 @@
                       I'm interested in robot learning, deep reinforcement
                       learning, and machine learning in general.
                     </p>
+                    <p>
+                      Below are first-authored papers during my PhD. See the full list on <a href="https://scholar.google.com/citations?user=FTw85U8AAAAJ&hl=en">Google Scholar</a>.
+                    </p>
                   </td>
                 </tr>
               </tbody>
@@ -119,10 +140,121 @@
                 border-collapse: separate;
                 margin-right: auto;
                 margin-left: auto;
+                table-layout: fixed;
               "
             >
               <tbody>
-                <tr onmouseout="zipmap_stop()" onmouseover="zipmap_start()">
+                <tr>
+                  <td style="padding: 16px; width: 20%; vertical-align: middle">
+                    <img
+                      src="data/iclr2026/teaser.png"
+                      class="paper-teaser"
+                      alt="Hyper-SET overview"
+                    />
+                  </td>
+                  <td style="padding: 20px; width: 75%; vertical-align: middle; overflow-x: auto;">
+                    <a href="https://hyper-set.github.io/">
+                      <span class="papertitle"
+                        >Hyper-SET: Designing Transformers via Hyperspherical
+                        Energy Minimization</span
+                      >
+                    </a>
+                    <br />
+                    <strong>Yunzhe Hu</strong>,
+                    <a href="https://difanzou.github.io/">Difan Zou</a>,
+                    <a
+                      href="https://scholar.google.com/citations?user=7Hdu5k4AAAAJ&hl=en"
+                      >Dong Xu</a
+                    >
+                    <br />
+                    <em>ICLR</em>, 2026
+                    <br />
+                    <a href="https://hyper-set.github.io/">project page</a>
+                    /
+                    <a href="https://openreview.net/pdf?id=FinhjyDgYA">paper</a>
+                    /
+                    <a href="https://arxiv.org/abs/2502.11646">arXiv</a>
+                    /
+                    <a href="https://github.com/huyunzhe/hyper-set">code</a>
+                    /
+                    <a href="data/iclr2026/slides.pdf">slides</a>
+                    /
+                    <a href="data/iclr2026/poster.pdf">poster</a>
+                    /
+                    <a href="javascript:void(0)" onclick="var b=document.getElementById('hyperset-bibtex');b.style.display=b.style.display==='block'?'none':'block'">bibtex</a>
+                    <div id="hyperset-bibtex" style="display:none; max-width:100%; overflow-x:auto; box-sizing:border-box;">
+                      <pre style="background-color:#f4f4f4;padding:12px;border-radius:6px;font-size:12px;margin-top:8px;margin-bottom:0;white-space:pre;overflow-x:auto;max-width:100%;box-sizing:border-box;">@inproceedings{
+  hu2026hyperset,
+  title={Hyper-{SET}: Designing Transformers via Hyperspherical Energy Minimization},
+  author={Yunzhe Hu and Difan Zou and Dong Xu},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=FinhjyDgYA}
+}</pre>
+                    </div>
+                    <p></p>
+                    <p>
+                      A principled, top-down Transformer design grounded in
+                      energy-based interpretation: symmetric attention,
+                      feedforward, and RMS normalization all emerge from
+                      iterative constrained energy minimization on the
+                      hypersphere, yielding a compact recurrent-depth model
+                      competitive across reasoning, classification, and masked
+                      modeling tasks.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 16px; width: 20%; vertical-align: middle">
+                    <img
+                      src="data/neurips2024/teaser.png"
+                      class="paper-teaser"
+                      alt="neurips2024 teaser"
+                    />
+                  </td>
+                  <td style="padding: 20px; width: 75%; vertical-align: middle; overflow-x: auto;">
+                    <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d3d1947ba438c758790b18d5fcf69e8f-Paper-Conference.pdf">
+                      <span class="papertitle"
+                        >An In-depth Investigation of Sparse Rate Reduction in Transformer-like Models</span
+                      >
+                    </a>
+                    <br />
+                    <strong>Yunzhe Hu</strong>,
+                    <a href="https://difanzou.github.io/">Difan Zou</a>,
+                    <a
+                      href="https://scholar.google.com/citations?user=7Hdu5k4AAAAJ&hl=en"
+                      >Dong Xu</a
+                    >
+                    <br />
+                    <em>NeurIPS</em>, 2024
+                    <br />
+                    <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d3d1947ba438c758790b18d5fcf69e8f-Paper-Conference.pdf">paper</a>
+                    /
+                    <a href="https://arxiv.org/abs/2411.17182">arXiv</a>
+                    /
+                    <a href="data/neurips2024/slides.pdf">slides</a>
+                    /
+                    <a href="data/neurips2024/poster.pdf">poster</a>
+                    /
+                    <a href="javascript:void(0)" onclick="var b=document.getElementById('neurips2024-bibtex');b.style.display=b.style.display==='block'?'none':'block'">bibtex</a>
+                    <div id="neurips2024-bibtex" style="display:none; max-width:100%; overflow-x:auto; box-sizing:border-box;">
+                      <pre style="background-color:#f4f4f4;padding:12px;border-radius:6px;font-size:12px;margin-top:8px;margin-bottom:0;white-space:pre;overflow-x:auto;max-width:100%;box-sizing:border-box;">@inproceedings{
+  hu2024an,
+  title={An In-depth Investigation of Sparse Rate Reduction in Transformer-like Models},
+  author={Yunzhe Hu and Difan Zou and Dong Xu},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  year={2024},
+  url={https://openreview.net/forum?id=CAC74VuMWX}
+}</pre>
+                    </div>
+                    <p></p>
+                    <p>
+                      
+                    </p>
+                  </td>
+                </tr>
+                <!-- <tr onmouseout="zipmap_stop()" onmouseover="zipmap_start()">
                   <td style="padding: 16px; width: 20%; vertical-align: middle">
                     <div class="one">
                       <div class="two" id="zipmap_image">
@@ -178,7 +310,7 @@
                       linear-time 3D reconstruction.
                     </p>
                   </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
 
@@ -211,138 +343,30 @@
             >
               <tbody>
                 <tr>
-                  <td
-                    align="center"
-                    style="padding: 16px; width: 20%; vertical-align: middle"
-                  >
-                    <div class="colored-box" style="background-color: #fcb97d">
-                      <h2>Micropapers</h2>
-                    </div>
-                  </td>
-                  <td style="padding: 8px; width: 80%; vertical-align: middle">
-                    <a href="https://arxiv.org/abs/2112.11687"
-                      >Squareplus: A Softplus-Like Algebraic Rectifier</a
-                    >
-                    <br />
-                    <a href="https://arxiv.org/abs/2010.09714"
-                      >A Convenient Generalization of Schlick's Bias and Gain
-                      Functions</a
-                    >
-                    <br />
-                    <a href="https://arxiv.org/abs/1704.07483"
-                      >Continuously Differentiable Exponential Linear Units</a
-                    >
-                    <br />
-                    <a
-                      href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf"
-                      >Scholars & Big Models: How Can Academics Adapt?</a
-                    >
+                  <td style="padding: 8px 16px; width: 100%; vertical-align: top">
+                    <p><strong>Talks</strong></p>
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li><a href="data/misc/talks/Towards Understanding and Designing Transformers From Sparse Rate Reduction to Generalized Hopfield Energy.pdf">Towards Understanding and Designing Transformers: From Sparse Rate Reduction to Generalized Hopfield Energy</a>, CRF Yearly Workshop, HK Polytechnic University, June 2025</li>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 16px; width: 100%; vertical-align: top">
+                    <p><strong>Academic Service</strong></p>
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>ICML, 2025</li>
+                      <li>NeurIPS, 2025</li>
+                      <li>ICLR, 2026</li>
+                    </ul>
                   </td>
                 </tr>
-
                 <tr>
-                  <td
-                    align="center"
-                    style="padding: 16px; width: 20%; vertical-align: middle"
-                  >
-                    <div class="colored-box" style="background-color: #aaba9e">
-                      <h2>Recorded Talks</h2>
-                    </div>
-                  </td>
-                  <td style="padding: 8px; width: 80%; vertical-align: center">
-                    <a href="https://www.youtube.com/watch?v=hFlF33JZbA0"
-                      >Radiance Fields and the Future of Generative Media,
-                      2025</a
-                    ><br />
-                    <a href="https://www.youtube.com/watch?v=h9vq_65eDas"
-                      >View Dependent Podcast, 2024</a
-                    ><br />
-                    <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo"
-                      >Bay Area Robotics Symposium, 2023 </a
-                    ><br />
-                    <a href="https://youtu.be/TvWkwDYtBP4?t=7604"
-                      >EGSR Keynote, 2021</a
-                    ><br />
-                    <a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q"
-                      >TUM AI Lecture Series, 2020</a
-                    ><br />
-                    <a href="https://www.youtube.com/watch?v=HfJpQCBTqZs"
-                      >Vision & Graphics Seminar at MIT, 2020</a
-                    >
-                  </td>
-                </tr>
-
-                <tr>
-                  <td
-                    align="center"
-                    style="padding: 16px; width: 20%; vertical-align: middle"
-                  >
-                    <div class="colored-box" style="background-color: #c6b89e">
-                      <h2>Academic Service</h2>
-                    </div>
-                  </td>
-                  <td style="padding: 8px; width: 80%; vertical-align: center">
-                    <a href="https://iccv.thecvf.com/"
-                      >Lead Area Chair, ICCV 2025</a
-                    >
-                    <br />
-                    <a
-                      href="https://cvpr.thecvf.com/Conferences/2025/Organizers"
-                      >Lead Area Chair, CVPR 2025</a
-                    >
-                    <br />
-                    <a
-                      href="https://cvpr.thecvf.com/Conferences/2024/Organizers"
-                      >Area Chair, CVPR 2024</a
-                    >
-                    <br />
-                    <a
-                      href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers"
-                      >Demo Chair, CVPR 2023</a
-                    >
-                    <br />
-                    <a href="https://cvpr2022.thecvf.com/area-chairs"
-                      >Area Chair, CVPR 2022</a
-                    >
-                    <br />
-                    <a href="http://cvpr2021.thecvf.com/area-chairs"
-                      >Area Chair & Award Committee Member, CVPR 2021</a
-                    >
-                    <br />
-                    <a href="http://cvpr2019.thecvf.com/area_chairs"
-                      >Area Chair, CVPR 2019</a
-                    >
-                    <br />
-                    <a href="http://cvpr2018.thecvf.com/organizers/area_chairs"
-                      >Area Chair, CVPR 2018</a
-                    >
-                  </td>
-                </tr>
-
-                <tr>
-                  <td
-                    align="center"
-                    style="padding: 16px; width: 20%; vertical-align: middle"
-                  >
-                    <div class="colored-box" style="background-color: #edd892">
-                      <h2>Teaching</h2>
-                    </div>
-                  </td>
-                  <td style="padding: 8px; width: 80%; vertical-align: center">
-                    <a
-                      href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html"
-                      >Graduate Student Instructor, CS188 Spring 2011</a
-                    >
-                    <br />
-                    <a
-                      href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html"
-                      >Graduate Student Instructor, CS188 Fall 2010</a
-                    >
-                    <br />
-                    <a href="http://aima.cs.berkeley.edu/"
-                      >Figures, "Artificial Intelligence: A Modern Approach",
-                      3rd Edition</a
-                    >
+                  <td style="padding: 8px 16px; width: 100%; vertical-align: top">
+                    <p><strong>Teaching</strong></p>
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Teaching Assistant, COMP7404 Computational Intelligence and Machine Learning, Spring 2023</li>
+                      <li>Teaching Assistant, COMP7404 Computational Intelligence and Machine Learning, Fall 2023</li>
+                      <li>Teaching Assistant, COMP7404 Computational Intelligence and Machine Learning, Spring 2025</li>
+                      <li>Teaching Assistant, COMP3314 Introduction to machine learning, Fall 2025</li>
+                    </ul>
                   </td>
                 </tr>
               </tbody>
@@ -358,26 +382,23 @@
               "
             >
               <tbody>
-
                 <tr>
-                  <td style="padding: 0px">
+                  <td style="padding: 0px; vertical-align: bottom">
                     <br />
                     <p style="text-align: left; font-size: small">
-                      Last updated: April 2, 2026
+                      Last updated: April 25, 2026
                     </p>
                   </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0px">
+                  <td style="padding: 0px; vertical-align: bottom">
                     <br />
                     <p style="text-align: right; font-size: small">
+                      Thanks for
                       <a href="https://github.com/jonbarron/jonbarron_website"
-                        >Thanks Jon Barron for the source code!</a
+                        >Jon Barron's website</a
                       >.
                     </p>
                   </td>
                 </tr>
-
               </tbody>
             </table>
           </td>
