@@ -41,6 +41,14 @@ h2 {
   font-weight: normal;
 }
 
+.chinese-name {
+  display: inline-block;
+  margin-left: 0.25em;
+  font-family: "Kaiti SC", STKaiti, KaiTi, "楷体", serif;
+  font-size: 0.875em;
+  white-space: nowrap;
+}
+
 .one {
   width: 160px;
   height: 160px;
@@ -89,13 +97,14 @@ span.highlight {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0s linear 0.2s;
 }
 
 .bibtex-modal.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transition-delay: 0s;
 }
 
 .bibtex-modal-backdrop {
@@ -159,5 +168,41 @@ span.highlight {
   overflow-x: auto;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .profile-table > tbody > tr,
+  .publications-table > tbody > tr {
+    display: block;
+  }
+
+  .profile-table > tbody > tr > td,
+  .publications-table > tbody > tr > td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+  }
+
+  .profile-table > tbody > tr > td:last-child {
+    text-align: center;
+  }
+
+  .profile-table img {
+    max-width: 210px !important;
+  }
+
+  .publications-table .paper-teaser {
+    max-width: 240px;
+    margin-inline: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bibtex-modal,
+  .bibtex-modal-dialog {
+    transition: none;
+  }
 }
 

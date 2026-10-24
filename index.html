@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="msvalidate.01" content="CE73B30F67CEA595F1EE16381806BDB6" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4HQVYY8M5"></script>
@@ -11,7 +12,6 @@
 
       gtag('config', 'G-B4HQVYY8M5');
     </script>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <title>Yunzhe Hu - Homepage</title>
 
@@ -26,23 +26,28 @@
     <meta property="og:url" content="https://huyunzhe.github.io/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://huyunzhe.github.io/images/yzhu.png" />
+    <meta property="og:image:width" content="1771" />
+    <meta property="og:image:height" content="2346" />
+    <meta property="og:image:alt" content="Yunzhe Hu" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Yunzhe Hu - Homepage" />
     <meta name="twitter:description" content="CS PhD student at the University of Hong Kong working on robot learning, deep reinforcement learning, and principled Transformer design." />
     <meta name="twitter:image" content="https://huyunzhe.github.io/images/yzhu.png" />
+    <meta name="twitter:image:alt" content="Yunzhe Hu" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
             "@type": "WebSite",
-            "name": "Yunzhe Hu - Homepage",
-            "alternateName": "Yunzhe Hu",
+            "name": "Yunzhe Hu",
+            "alternateName": "Yunzhe Hu - Homepage",
             "url": "https://huyunzhe.github.io/"
           },
           {
             "@type": "Person",
             "name": "Yunzhe Hu",
+            "alternateName": "胡云哲",
             "url": "https://huyunzhe.github.io/",
             "image": "https://huyunzhe.github.io/images/yzhu.png",
             "jobTitle": "PhD Student",
@@ -67,10 +72,13 @@
     
     
     <link
-      rel="shortcut icon"
-      href="images/favicon/favicon.ico"
+      rel="icon"
+      href="/favicon.ico"
       type="image/x-icon"
+      sizes="16x16 32x32 48x48 96x96"
     />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <style>
       .paper-teaser {
@@ -83,17 +91,26 @@
         position: relative;
         z-index: 1;
       }
-      .paper-teaser:hover {
-        transform: scale(5);
-        z-index: 100;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        border-radius: 4px;
+      @media (min-width: 601px) and (hover: hover) and (pointer: fine) {
+        .paper-teaser:hover {
+          transform: scale(5);
+          z-index: 100;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+          border-radius: 4px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .paper-teaser {
+          transition: none;
+        }
       }
     </style>
   </head>
 
   <body>
+    <main id="main-content">
     <table
+      role="presentation"
       style="
         width: 100%;
         max-width: 800px;
@@ -108,6 +125,8 @@
         <tr style="padding: 0px">
           <td style="padding: 0px">
             <table
+              role="presentation"
+              class="profile-table"
               style="
                 width: 100%;
                 border: 0px;
@@ -120,23 +139,29 @@
               <tbody>
                 <tr style="padding: 0px">
                   <td style="padding: 2.5%; width: 63%; vertical-align: middle">
-                    <h1 class="name" style="text-align: center">Yunzhe Hu</h1>
+                    <h1 class="name" style="text-align: center">
+                      Yunzhe Hu <span class="chinese-name" lang="zh-Hans">胡云哲</span>
+                    </h1>
                     <p style="text-align: center; margin-top: 2">
                       yzhu [at] cs [dot] hku [dot] hk
                     </p>
                     <p>
-                      I'm a PhD student at the School of Computing and Data
+                      I am a PhD student at the School of Computing and Data
                       Science, University of Hong Kong, advised by <a href="https://scholar.google.com/citations?user=7Hdu5k4AAAAJ&hl=en">Prof. Dong Xu</a>,
                       and have worked with <a href="https://difanzou.github.io/">Prof. Difan Zou</a>. Previously, I received my bachelor's degree from
                       Shanghai Jiao Tong University in 2022, where I studied control science and engineering.
                     </p>
                     <p>
-                      I’m currently working on empowering an agent to learn from
-                      play (suboptimal trajectory) without hand-crafted
-                      extrinsic rewards and adapt in few/zero-shot. I have also
-                      done research in bridging the gap and revealing the
+                      I am currently working on empowering agents to learn from
+                      play (suboptimal trajectories) without hand-crafted
+                      extrinsic rewards and to adapt in few/zero shot. I have also
+                      done research on bridging the gap and revealing the
                       connections between energy-based learning and practical
                       Transformer design.
+                    </p>
+                    <p>
+                    I favor research grounded in and motivated by fundamental principles over empirical heuristics,
+                    and I enjoy exploring seemingly unrelated connections across different fields and challenging the conventional wisdom.
                     </p>
                     <p style="text-align: center">
                       <!-- <a href="mailto:yzhu@cs.hku.hk">Email</a> &nbsp;/&nbsp; -->
@@ -152,21 +177,34 @@
                   </td>
                   <td style="padding: 2.5%; width: 37%; max-width: 37%">
                     <a href="./images/yzhu.png"
-                      ><img
-                        style="
-                          width: 100%;
-                          max-width: 100%;
-                          height: auto;
-                        "
-                        alt="Yunzhe Hu"
-                        src="images/yzhu.png"
-                        class="hoverZoomLink"
-                    /></a>
+                      ><picture>
+                        <source
+                          type="image/avif"
+                          srcset="images/yzhu-240.avif 240w, images/yzhu-480.avif 480w, images/yzhu-720.avif 720w"
+                          sizes="(max-width: 600px) 210px, (max-width: 816px) 26vw, 210px"
+                        />
+                        <img
+                          style="
+                            width: 80%;
+                            max-width: 80%;
+                            height: auto;
+                          "
+                          alt="Yunzhe Hu"
+                          src="images/yzhu-480.webp"
+                          srcset="images/yzhu-240.webp 240w, images/yzhu-480.webp 480w, images/yzhu-720.webp 720w"
+                          sizes="(max-width: 600px) 210px, (max-width: 816px) 26vw, 210px"
+                          width="1771"
+                          height="2346"
+                          fetchpriority="high"
+                          class="hoverZoomLink"
+                        />
+                      </picture></a>
                   </td>
                 </tr>
               </tbody>
             </table>
             <table
+              role="presentation"
               style="
                 width: 100%;
                 border: 0px;
@@ -183,17 +221,19 @@
                   >
                     <h2>Research</h2>
                     <p>
-                      I'm interested in robot learning, deep reinforcement
-                      learning, and machine learning in general.
+                      I am interested in robot learning, model-based reinforcement
+                      learning, generative models, energy-based learning, and machine learning in general.
                     </p>
                     <p>
-                      Below are first-authored papers during my PhD. See the full list on <a href="https://scholar.google.com/citations?user=FTw85U8AAAAJ&hl=en">Google Scholar</a>.
+                      Below are my first-author papers from my PhD. See the full list on <a href="https://scholar.google.com/citations?user=FTw85U8AAAAJ&hl=en">Google Scholar</a>.
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
             <table
+              role="presentation"
+              class="publications-table"
               style="
                 width: 100%;
                 border: 0px;
@@ -205,10 +245,74 @@
               "
             >
               <tbody>
+                <tr id="vpflow">
+                  <td style="padding: 16px; width: 20%; vertical-align: middle">
+                    <!-- Desktop sizes include the existing 5x hover magnification. -->
+                    <img
+                      src="data/arxiv/value-equivalence.webp"
+                      srcset="data/arxiv/value-equivalence-480.webp 480w, data/arxiv/value-equivalence-768.webp 768w, data/arxiv/value-equivalence.webp 2400w"
+                      sizes="(max-width: 600px) 240px, 764px"
+                      width="2400"
+                      height="925"
+                      loading="lazy"
+                      decoding="async"
+                      class="paper-teaser"
+                      alt="VPFlow value-equivalence illustration and state/value prediction error trends"
+                    />
+                  </td>
+                  <td style="padding: 20px; width: 75%; vertical-align: middle; overflow-x: auto;">
+                    <a href="https://arxiv.org/abs/2610.27280">
+                      <span class="papertitle"
+                        >VPFlow: Value-Predictive Planning with Imperfect World
+                        Models for Offline Goal Reaching</span
+                      >
+                    </a>
+                    <br />
+                    <strong>Yunzhe Hu</strong>,
+                    <a
+                      href="https://scholar.google.com/citations?user=7Hdu5k4AAAAJ&hl=en"
+                      >Dong Xu</a
+                    >
+                    <br />
+                    <em>arXiv preprint</em>, 2026
+                    <br />
+                    <a href="https://arxiv.org/pdf/2610.27280">paper</a>
+                    /
+                    <a href="https://arxiv.org/abs/2610.27280">arXiv</a>
+                    /
+                    <a href="#vpflow-bibtex" class="bibtex-link" role="button" aria-haspopup="dialog" aria-controls="bibtex-modal" data-bibtex="vpflow-bibtex">bibtex</a>
+                    <div id="vpflow-bibtex" class="bibtex-source">
+                      <pre>@misc{hu2026vpflow,
+  title={VPFlow: Value-Predictive Planning with Imperfect World Models for Offline Goal Reaching},
+  author={Yunzhe Hu and Dong Xu},
+  year={2026},
+  eprint={2610.27280},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2610.27280}
+}</pre>
+                    </div>
+                    <p>
+                      A value-predictive planner for offline goal reaching:
+                      world models are trained to predict goal-reaching values rather than
+                      latent states, while noise-space planning enables policy improvement with imagined advantage without OOD queries.
+                      It challenges the pervasive assumption of next-state prediction in world models,
+                      showing that value prediction is more useful for planning, whereas accurate state prediction is often unnecessary.
+                    </p>
+                  </td>
+                </tr>
+
                 <tr>
                   <td style="padding: 16px; width: 20%; vertical-align: middle">
+                    <!-- Desktop sizes include the existing 5x hover magnification. -->
                     <img
-                      src="data/iclr2026/teaser.png"
+                      src="data/iclr2026/teaser.webp"
+                      srcset="data/iclr2026/teaser-480.webp 480w, data/iclr2026/teaser-768.webp 768w, data/iclr2026/teaser.webp 2729w"
+                      sizes="(max-width: 600px) 240px, 764px"
+                      width="2729"
+                      height="900"
+                      loading="lazy"
+                      decoding="async"
                       class="paper-teaser"
                       alt="Hyper-SET overview"
                     />
@@ -230,7 +334,7 @@
                     <br />
                     <em>ICLR</em>, 2026
                     <br />
-                    <a href="https://hyper-set.github.io/">project page</a>
+                    <a href="https://hyper-set.github.io/">website</a>
                     /
                     <a href="data/iclr2026/iclr2026_camera_ready.pdf">paper</a>
                     /
@@ -242,7 +346,7 @@
                     /
                     <a href="data/iclr2026/poster.pdf">poster</a>
                     /
-                    <a href="#" class="bibtex-link" data-bibtex="hyperset-bibtex">bibtex</a>
+                    <a href="#hyperset-bibtex" class="bibtex-link" role="button" aria-haspopup="dialog" aria-controls="bibtex-modal" data-bibtex="hyperset-bibtex">bibtex</a>
                     <div id="hyperset-bibtex" class="bibtex-source">
                       <pre>@inproceedings{
   hu2026hyperset,
@@ -269,7 +373,11 @@
                 <tr>
                   <td style="padding: 16px; width: 20%; vertical-align: middle">
                     <img
-                      src="data/neurips2024/teaser.png"
+                      src="data/neurips2024/teaser.webp"
+                      width="1152"
+                      height="768"
+                      loading="lazy"
+                      decoding="async"
                       class="paper-teaser"
                       alt="neurips2024 teaser"
                     />
@@ -298,7 +406,7 @@
                     /
                     <a href="data/neurips2024/poster.pdf">poster</a>
                     /
-                    <a href="#" class="bibtex-link" data-bibtex="neurips2024-bibtex">bibtex</a>
+                    <a href="#neurips2024-bibtex" class="bibtex-link" role="button" aria-haspopup="dialog" aria-controls="bibtex-modal" data-bibtex="neurips2024-bibtex">bibtex</a>
                     <div id="neurips2024-bibtex" class="bibtex-source">
                       <pre>@inproceedings{
   hu2024an,
@@ -376,6 +484,7 @@
             </table>
 
             <table
+              role="presentation"
               style="
                 width: 100%;
                 margin: 0 auto;
@@ -393,6 +502,7 @@
               </tbody>
             </table>
             <table
+              role="presentation"
               style="
                 width: 100%;
                 border: 0px;
@@ -407,7 +517,9 @@
                   <td style="padding: 0 16px 8px; width: 100%; vertical-align: top">
                     <p style="margin-top: 0"><strong>Talks</strong></p>
                     <ul style="margin: 0; padding-left: 20px;">
-                      <li><a href="data/misc/talks/Towards Understanding and Designing Transformers From Sparse Rate Reduction to Generalized Hopfield Energy.pdf">Towards Understanding and Designing Transformers: From Sparse Rate Reduction to Generalized Hopfield Energy</a>, CRF Yearly Workshop, HK Polytechnic University, June 2025</li>
+                      <li><a href="data/misc/talks/CRF_yearly_workshop_2025.pdf">Towards Understanding and Designing Transformers: From Sparse Rate Reduction to Generalized Hopfield Energy</a>, CRF Yearly Workshop, HK Polytechnic University, June 2025</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
                   <td style="padding: 8px 16px; width: 100%; vertical-align: top">
@@ -415,7 +527,7 @@
                     <ul style="margin: 0; padding-left: 20px;">
                       <li>ICML, 2025</li>
                       <li>NeurIPS, 2025</li>
-                      <li>ICLR, 2026</li>
+                      <li>ICLR, 2026, 2027</li>
                     </ul>
                   </td>
                 </tr>
@@ -423,9 +535,7 @@
                   <td style="padding: 8px 16px; width: 100%; vertical-align: top">
                     <p><strong>Teaching</strong></p>
                     <ul style="margin: 0; padding-left: 20px;">
-                      <li>Teaching Assistant, COMP7404 Computational Intelligence and Machine Learning, Spring 2023</li>
-                      <li>Teaching Assistant, COMP7404 Computational Intelligence and Machine Learning, Fall 2023</li>
-                      <li>Teaching Assistant, COMP7404 Computational Intelligence and Machine Learning, Spring 2025</li>
+                      <li>Teaching Assistant, COMP7404 Computational Intelligence and Machine Learning, Spring 2023, Fall 2023, Spring 2025</li>
                       <li>Teaching Assistant, COMP3314 Introduction to machine learning, Fall 2025</li>
                     </ul>
                   </td>
@@ -433,6 +543,7 @@
               </tbody>
             </table>
             <table
+              role="presentation"
               style="
                 width: 100%;
                 border: 0px;
@@ -466,15 +577,16 @@
         </tr>
       </tbody>
     </table>
+    </main>
 
-    <div id="bibtex-modal" class="bibtex-modal" aria-hidden="true">
+    <div id="bibtex-modal" class="bibtex-modal" aria-hidden="true" inert>
       <div class="bibtex-modal-backdrop" data-bibtex-close></div>
       <div class="bibtex-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="bibtex-modal-title">
         <div class="bibtex-modal-header">
           <h3 id="bibtex-modal-title" class="bibtex-modal-title">BibTeX</h3>
           <button type="button" class="bibtex-modal-close" data-bibtex-close aria-label="Close">&times;</button>
         </div>
-        <pre id="bibtex-modal-content" class="bibtex-modal-content"></pre>
+        <pre id="bibtex-modal-content" class="bibtex-modal-content" tabindex="0"></pre>
       </div>
     </div>
 
@@ -482,27 +594,51 @@
       (function () {
         var modal = document.getElementById("bibtex-modal");
         var content = document.getElementById("bibtex-modal-content");
+        var main = document.getElementById("main-content");
+        var dialog = modal.querySelector(".bibtex-modal-dialog");
+        var closeButton = modal.querySelector(".bibtex-modal-close");
+        var returnFocus = null;
+        var previousOverflow = "";
 
-        function openBibtex(id) {
+        function openBibtex(id, trigger) {
           var source = document.getElementById(id);
           if (!source) return;
           var pre = source.querySelector("pre");
           content.textContent = pre ? pre.textContent : source.textContent;
+          returnFocus = trigger;
+          previousOverflow = document.body.style.overflow;
+          modal.inert = false;
           modal.classList.add("is-open");
           modal.setAttribute("aria-hidden", "false");
           document.body.style.overflow = "hidden";
+          closeButton.focus({ preventScroll: true });
+          main.inert = true;
         }
 
         function closeBibtex() {
+          if (!modal.classList.contains("is-open")) return;
+          main.inert = false;
+          document.body.style.overflow = previousOverflow;
+          if (returnFocus) returnFocus.focus({ preventScroll: true });
           modal.classList.remove("is-open");
           modal.setAttribute("aria-hidden", "true");
-          document.body.style.overflow = "";
+          modal.inert = true;
         }
 
         document.querySelectorAll(".bibtex-link").forEach(function (link) {
+          var title = link.closest("td").querySelector(".papertitle");
+          if (title) {
+            link.setAttribute("aria-label", "bibtex: " + title.textContent.replace(/\s+/g, " ").trim());
+          }
           link.addEventListener("click", function (event) {
             event.preventDefault();
-            openBibtex(link.getAttribute("data-bibtex"));
+            openBibtex(link.getAttribute("data-bibtex"), link);
+          });
+          link.addEventListener("keydown", function (event) {
+            if (event.key === " ") {
+              event.preventDefault();
+              link.click();
+            }
           });
         });
 
@@ -511,8 +647,21 @@
         });
 
         document.addEventListener("keydown", function (event) {
-          if (event.key === "Escape" && modal.classList.contains("is-open")) {
+          if (!modal.classList.contains("is-open")) return;
+          if (event.key === "Escape") {
+            event.preventDefault();
             closeBibtex();
+          } else if (event.key === "Tab") {
+            var controls = dialog.querySelectorAll('button:not([disabled]), [href], [tabindex="0"]');
+            var first = controls[0];
+            var last = controls[controls.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+              event.preventDefault();
+              last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+              event.preventDefault();
+              first.focus();
+            }
           }
         });
       })();
