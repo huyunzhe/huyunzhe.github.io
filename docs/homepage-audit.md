@@ -113,3 +113,9 @@ npx --yes lighthouse http://127.0.0.1:8765/ --preset=desktop --chrome-flags="--h
 ```
 
 For a production audit after deployment, replace the local URL with `https://huyunzhe.github.io/`. Scores can vary with browser versions, network conditions, and machine load, as explained in [Lighthouse's scoring guidance](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring).
+
+## BibTeX dropdown update — 2026-10-25
+
+The citation popups were replaced with native `details`/`summary` disclosures. Each bibtex control stays beside the paper links and opens a bordered gray panel with wrapped, monospace citation text. The modal markup, styles, and JavaScript were removed; all citation text is unchanged.
+
+Browser checks passed at widths of 320, 390, 768, and 1280 pixels: pointer, Enter, and Space toggling; unrestricted Tab navigation; independent dropdowns; exposed native expanded states; no horizontal overflow; and axe scans with panels open. All three dropdowns also work with JavaScript disabled. Closed-page text matches the preceding version at all four tested widths. These checks do not change the previously documented contrast limitation of other orange hover/focus links.

@@ -145,6 +145,9 @@
                     <p style="text-align: center; margin-top: 2">
                       yzhu [at] cs [dot] hku [dot] hk
                     </p>
+                    <p style="text-align: center; color: #b91c1c">
+                      Expected to graduate in 2027 · Seeking research intern & full-time opportunities in industry
+                    </p>
                     <p>
                       I am a PhD student at the School of Computing and Data
                       Science, University of Hong Kong, advised by <a href="https://scholar.google.com/citations?user=7Hdu5k4AAAAJ&hl=en">Prof. Dong Xu</a>,
@@ -160,12 +163,12 @@
                       Transformer design.
                     </p>
                     <p>
-                    I favor research grounded in and motivated by fundamental principles over empirical heuristics,
+                    I favor research grounded in and/or motivated by fundamental principles over empirical heuristics,
                     and I enjoy exploring seemingly unrelated connections across different fields and challenging the conventional wisdom.
                     </p>
                     <p style="text-align: center">
                       <!-- <a href="mailto:yzhu@cs.hku.hk">Email</a> &nbsp;/&nbsp; -->
-                      <!-- <a href="data/YunzheHu-CV.pdf">CV</a> &nbsp;/&nbsp; -->
+                      <a href="data/resume/resume.pdf">Resume (Oct. 2026)</a> &nbsp;/&nbsp;
                       <a
                         href="https://scholar.google.com/citations?user=FTw85U8AAAAJ&hl=en"
                         >Google Scholar</a
@@ -280,9 +283,9 @@
                     /
                     <a href="https://arxiv.org/abs/2610.27280">arXiv</a>
                     /
-                    <a href="#vpflow-bibtex" class="bibtex-link" role="button" aria-haspopup="dialog" aria-controls="bibtex-modal" data-bibtex="vpflow-bibtex">bibtex</a>
-                    <div id="vpflow-bibtex" class="bibtex-source">
-                      <pre>@misc{hu2026vpflow,
+                    <details id="vpflow-bibtex" class="bibtex-dropdown">
+                      <summary aria-label="bibtex for VPFlow: Value-Predictive Planning with Imperfect World Models for Offline Goal Reaching">bibtex</summary>
+                      <pre class="bibtex-content"><code>@misc{hu2026vpflow,
   title={VPFlow: Value-Predictive Planning with Imperfect World Models for Offline Goal Reaching},
   author={Yunzhe Hu and Dong Xu},
   year={2026},
@@ -290,8 +293,8 @@
   archivePrefix={arXiv},
   primaryClass={cs.LG},
   url={https://arxiv.org/abs/2610.27280}
-}</pre>
-                    </div>
+}</code></pre>
+                    </details>
                     <p>
                       A value-predictive planner for offline goal reaching:
                       world models are trained to predict goal-reaching values rather than
@@ -346,17 +349,17 @@
                     /
                     <a href="data/iclr2026/poster.pdf">poster</a>
                     /
-                    <a href="#hyperset-bibtex" class="bibtex-link" role="button" aria-haspopup="dialog" aria-controls="bibtex-modal" data-bibtex="hyperset-bibtex">bibtex</a>
-                    <div id="hyperset-bibtex" class="bibtex-source">
-                      <pre>@inproceedings{
+                    <details id="hyperset-bibtex" class="bibtex-dropdown">
+                      <summary aria-label="bibtex for Hyper-SET: Designing Transformers via Hyperspherical Energy Minimization">bibtex</summary>
+                      <pre class="bibtex-content"><code>@inproceedings{
   hu2026hyperset,
   title={Hyper-{SET}: Designing Transformers via Hyperspherical Energy Minimization},
   author={Yunzhe Hu and Difan Zou and Dong Xu},
   booktitle={The Fourteenth International Conference on Learning Representations},
   year={2026},
   url={https://openreview.net/forum?id=FinhjyDgYA}
-}</pre>
-                    </div>
+}</code></pre>
+                    </details>
                     <p></p>
                     <p>
                       A principled, top-down Transformer design grounded in
@@ -406,17 +409,17 @@
                     /
                     <a href="data/neurips2024/poster.pdf">poster</a>
                     /
-                    <a href="#neurips2024-bibtex" class="bibtex-link" role="button" aria-haspopup="dialog" aria-controls="bibtex-modal" data-bibtex="neurips2024-bibtex">bibtex</a>
-                    <div id="neurips2024-bibtex" class="bibtex-source">
-                      <pre>@inproceedings{
+                    <details id="neurips2024-bibtex" class="bibtex-dropdown">
+                      <summary aria-label="bibtex for An In-depth Investigation of Sparse Rate Reduction in Transformer-like Models">bibtex</summary>
+                      <pre class="bibtex-content"><code>@inproceedings{
   hu2024an,
   title={An In-depth Investigation of Sparse Rate Reduction in Transformer-like Models},
   author={Yunzhe Hu and Difan Zou and Dong Xu},
   booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
   year={2024},
   url={https://openreview.net/forum?id=CAC74VuMWX}
-}</pre>
-                    </div>
+}</code></pre>
+                    </details>
                     <p></p>
                     <p>
                       
@@ -558,7 +561,7 @@
                   <td style="padding: 0px; vertical-align: bottom">
                     <br />
                     <p style="text-align: left; font-size: small">
-                      Last updated: April 25, 2026
+                      Last updated: October 26, 2026
                     </p>
                   </td>
                   <td style="padding: 0px; vertical-align: bottom">
@@ -579,92 +582,5 @@
     </table>
     </main>
 
-    <div id="bibtex-modal" class="bibtex-modal" aria-hidden="true" inert>
-      <div class="bibtex-modal-backdrop" data-bibtex-close></div>
-      <div class="bibtex-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="bibtex-modal-title">
-        <div class="bibtex-modal-header">
-          <h3 id="bibtex-modal-title" class="bibtex-modal-title">BibTeX</h3>
-          <button type="button" class="bibtex-modal-close" data-bibtex-close aria-label="Close">&times;</button>
-        </div>
-        <pre id="bibtex-modal-content" class="bibtex-modal-content" tabindex="0"></pre>
-      </div>
-    </div>
-
-    <script>
-      (function () {
-        var modal = document.getElementById("bibtex-modal");
-        var content = document.getElementById("bibtex-modal-content");
-        var main = document.getElementById("main-content");
-        var dialog = modal.querySelector(".bibtex-modal-dialog");
-        var closeButton = modal.querySelector(".bibtex-modal-close");
-        var returnFocus = null;
-        var previousOverflow = "";
-
-        function openBibtex(id, trigger) {
-          var source = document.getElementById(id);
-          if (!source) return;
-          var pre = source.querySelector("pre");
-          content.textContent = pre ? pre.textContent : source.textContent;
-          returnFocus = trigger;
-          previousOverflow = document.body.style.overflow;
-          modal.inert = false;
-          modal.classList.add("is-open");
-          modal.setAttribute("aria-hidden", "false");
-          document.body.style.overflow = "hidden";
-          closeButton.focus({ preventScroll: true });
-          main.inert = true;
-        }
-
-        function closeBibtex() {
-          if (!modal.classList.contains("is-open")) return;
-          main.inert = false;
-          document.body.style.overflow = previousOverflow;
-          if (returnFocus) returnFocus.focus({ preventScroll: true });
-          modal.classList.remove("is-open");
-          modal.setAttribute("aria-hidden", "true");
-          modal.inert = true;
-        }
-
-        document.querySelectorAll(".bibtex-link").forEach(function (link) {
-          var title = link.closest("td").querySelector(".papertitle");
-          if (title) {
-            link.setAttribute("aria-label", "bibtex: " + title.textContent.replace(/\s+/g, " ").trim());
-          }
-          link.addEventListener("click", function (event) {
-            event.preventDefault();
-            openBibtex(link.getAttribute("data-bibtex"), link);
-          });
-          link.addEventListener("keydown", function (event) {
-            if (event.key === " ") {
-              event.preventDefault();
-              link.click();
-            }
-          });
-        });
-
-        document.querySelectorAll("[data-bibtex-close]").forEach(function (el) {
-          el.addEventListener("click", closeBibtex);
-        });
-
-        document.addEventListener("keydown", function (event) {
-          if (!modal.classList.contains("is-open")) return;
-          if (event.key === "Escape") {
-            event.preventDefault();
-            closeBibtex();
-          } else if (event.key === "Tab") {
-            var controls = dialog.querySelectorAll('button:not([disabled]), [href], [tabindex="0"]');
-            var first = controls[0];
-            var last = controls[controls.length - 1];
-            if (event.shiftKey && document.activeElement === first) {
-              event.preventDefault();
-              last.focus();
-            } else if (!event.shiftKey && document.activeElement === last) {
-              event.preventDefault();
-              first.focus();
-            }
-          }
-        });
-      })();
-    </script>
   </body>
 </html>

@@ -81,91 +81,71 @@ span.highlight {
     border-radius: 10px;
 }
 
-.bibtex-source {
+.bibtex-dropdown {
+  display: inline;
+}
+
+.bibtex-dropdown > summary {
+  display: inline-flex;
+  align-items: center;
+  /* gap: 0.4em; */
+  color: #1772d0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.bibtex-dropdown > summary::-webkit-details-marker {
   display: none;
 }
 
-.bibtex-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  box-sizing: border-box;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+.bibtex-dropdown > summary::marker {
+  content: "";
 }
 
-.bibtex-modal.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transition-delay: 0s;
+/* .bibtex-dropdown > summary::after {
+  content: "";
+  width: 0.35em;
+  height: 0.35em;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-0.1em) rotate(45deg);
 }
 
-.bibtex-modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+.bibtex-dropdown[open] > summary::after {
+  transform: translateY(0.1em) rotate(225deg);
+} */
+
+.bibtex-dropdown > summary:hover,
+.bibtex-dropdown > summary:focus-visible {
+  color: #135ca6;
 }
 
-.bibtex-modal-dialog {
-  position: relative;
-  width: min(720px, 100%);
-  max-height: min(80vh, 640px);
-  overflow: auto;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
-  padding: 20px 20px 16px;
-  box-sizing: border-box;
-  transform: translateY(12px) scale(0.98);
-  transition: transform 0.2s ease;
+.bibtex-dropdown > summary:hover {
+  text-decoration: underline;
 }
 
-.bibtex-modal.is-open .bibtex-modal-dialog {
-  transform: translateY(0) scale(1);
+.bibtex-dropdown > summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
-.bibtex-modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-
-.bibtex-modal-title {
-  margin: 0;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.bibtex-modal-close {
-  border: 0;
-  background: transparent;
-  color: #666;
-  font-size: 24px;
-  line-height: 1;
-  padding: 0 0 0 12px;
-  cursor: pointer;
-}
-
-.bibtex-modal-close:hover {
-  color: #f09228;
-}
-
-.bibtex-modal-content {
-  margin: 0;
-  background-color: #f4f4f4;
-  padding: 12px;
-  border-radius: 6px;
+.bibtex-content,
+.bibtex-content code {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 12px;
-  white-space: pre;
-  overflow-x: auto;
+  line-height: 1.6;
+}
+
+.bibtex-content {
+  margin: 12px 0;
+  background-color: #f4f4f4;
+  color: #24292f;
+  padding: 12px 14px;
+  border: 1px solid #e2e5e9;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -196,13 +176,6 @@ span.highlight {
   .publications-table .paper-teaser {
     max-width: 240px;
     margin-inline: auto;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bibtex-modal,
-  .bibtex-modal-dialog {
-    transition: none;
   }
 }
 
