@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Yunzhe Hu} \\ \vspace{1pt}
+    \small (852) 84915302 $|$ 
+    \href{mailto:yzhu@cs.hku.hk}{\underline{yzhu@cs.hku.hk}} $|$ 
+    \href{https://www.linkedin.com/in/yunzhehu112}{\underline{linkedin.com/in/yunzhehu112}} $|$
+    \href{https://huyunzhe.github.io}{\underline{huyunzhe.github.io}} $|$
+    \href{https://github.com/huyunzhe}{\underline{github.com/huyunzhe}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Hong Kong}{Hong Kong, China}
+      {Ph.D. in Computer Science (Advisor: Prof. Dong Xu)}{Sept. 2022 -- June 2027 (Expected)}
+    \resumeSubheading
+      {Shanghai Jiao Tong University}{Shanghai, China}
+      {B.S. in Control Engineering (Artificial Intelligence Track)}{Sept. 2018 -- June 2022}
+  \resumeSubHeadingListEnd
+
+  %-----------PUBLICATIONS-----------
+\section{Publications and Preprints {\normalfont\small (* Equal contribution)}}
+\begin{itemize}[leftmargin=0.15in, itemsep=3pt,topsep=2pt]
+% \resumeItemListStart
+    \resumeItem{\textbf{Yunzhe Hu}, Dong Xu. VPFlow: Value-Predictive Planning with Imperfect World Models for Offline Goal Reaching. \emph{Under review}, 2026.}
+    \resumeItem{\textbf{Yunzhe Hu}, Difan Zou, and Dong Xu. Hyper-SET: Designing Transformers via Hyperspherical Energy Minimization. \emph{ICLR}, 2026.}
+    \resumeItem{\textbf{Yunzhe Hu}, Difan Zou, and Dong Xu. An In-depth Investigation of Sparse Rate Reduction in Transformer-like Models. \emph{NeurIPS}, 2024.}
+    \resumeItem{Ming Yang, \textbf{Yunzhe Hu}, et al. Complexity-Aware Policy via Heterogeneous Experts for Robotic Manipulation. \emph{IEEE TCSVT}, 2025.}
+    \resumeItem{Guangming Wang*, \textbf{Yunzhe Hu}*, et al. What Matters for 3D Scene Flow Network. \emph{ECCV}, 2022.}
+    \resumeItem{Guangming Wang*, \textbf{Yunzhe Hu}*, et al. Residual 3-D Scene Flow Learning With Context-Aware Feature Extraction. \emph{IEEE TIM}, 2022.}
+\resumeItemListEnd
+
+%-----------EXPERIENCE-----------
+% Do NOT list Teaching Assistant (TA), grading, or academic service roles for industry jobs.
+% To show mentorship or leadership instead, frame it as a bullet inside your research role:
+%   e.g. "Mentored 5+ graduate researchers, contributing to 4+ published papers."
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Graduate Research Student}{Sept. 2022 -- Present}
+      {The University of Hong Kong (Advisor: Prof. Dong Xu)}{Hong Kong, China}
+      \resumeItemListStart
+        % VPFlow, Secs. 4.1--4.3 and 5.2: closed-form hindsight returns supervise value-predictive latents;
+        % state-prediction accuracy is not necessary for successful planning in the studied tasks.
+        \resumeItem{Demonstrated that accurate next-state prediction is unnecessary for effective planning in offline goal reaching, challenging a pervasive assumption; developed \emph{VPFlow} using closed-form hindsight returns to learn value-predictive world models without state reconstruction or bootstrapped targets.}
+        % VPFlow, Secs. 4.5 and 5.3: flow-policy noise search mitigates off-distribution action search;
+        % test-time policy improvement uses imagined advantages without updating model or policy weights.
+        \resumeItem{Identified off-distribution action search as a planning failure mode; designed noise-space evolutionary search for flow policy with imagined advantages to improve goal reaching at test time without weight updates, achieving mean success rate gains of at least 10.1 percentage points on state-based and pixel-based OGBench datasets.}
+        % Hyper-SET, Secs. 3--5 and App. A: MLE motivates alignment and uniformity; dual energies
+        % induce Transformer components. Validation spans reasoning, classification, and masked modeling.
+        \resumeItem{Formulated \emph{Hyper-SET}, a practical Transformer design framework, from a maximum-likelihood principle that balances semantic alignment and subspace uniformity, revealing a previously unnoticed connection; derived symmetric attention, feedforward layers, and normalization purely through constrained energy minimization, yielding interpretable recurrent Transformers for reasoning, classification, and masked modeling (\emph{ICLR 2026}).}
+        % SRR, Secs. 4--6: the attention-only update can increase the intended compression objective;
+        % generalization findings and regularization results are scoped to CRATE and its variants.
+        \resumeItem{Identified theoretical pitfalls in constructing attention layers from sparse rate reduction; derived model variants and linked sparse rate reduction to generalization through empirical complexity analysis, yielding improved regularization within the resulting Transformer family (\emph{NeurIPS 2024}).}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%------------------------------------------
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Dec. 2020 -- June 2022}
+      {Shanghai Jiao Tong University (Advisor: Prof. Hesheng Wang)}{Shanghai, China}
+      \resumeItemListStart
+        \resumeItem{Introduced context-aware feature pyramids and explicit residual refinement to resolve correspondence ambiguities from large motion and repetitive patterns in point clouds, reducing scene flow estimation error by at least 25\% (\emph{IEEE TIM 2022}).}
+        \resumeItem{Designed all-to-all flow embedding with bidirectional reliability validation; benchmarked correspondence and refinement design choices, achieving state-of-the-art scene flow estimation accuracy (\emph{ECCV 2022}).}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Software Engineering Intern}{July 2021 -- Aug. 2021}
+      {Shanghai Intelligent and Connected Vehicle R$\&$D Center}{Shanghai, China}
+      \resumeItemListStart
+        \resumeItem{Built a CarSim--Simulink simulation environment and Python vehicle controller to prototype deep reinforcement learning for autonomous parking with OpenAI Gym.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Visualized GitHub data to show collaboration}
+%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%           \resumeItemListStart
+%             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, Bash} \quad
+     \textbf{Frameworks}{: PyTorch, JAX, NumPy, Hugging Face, ROS} \\
+     \textbf{Distributed Training}{: PyTorch DDP/FSDP (up to 8 NVIDIA A100 GPUs)} \\
+     \textbf{Tools}{: Linux, Git, Docker, Weights \& Biases, Jupyter Notebook, GitHub Actions} \\
+    %  \textbf{Libraries}{: pandas, NumPy, Matplotlib} 
+    %  \textbf{Languages}{: Mandarin (Native), English (Fluent)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
